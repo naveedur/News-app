@@ -48,11 +48,12 @@ const News = (props)=>{
         props.setProgress(30);
         let parsedData = await data.json()
         setLoading(false)
-
+        console.log(parsedData);
         props.setProgress(70);
         const filteredArticles = parsedData.articles.filter(
             (article) => article.source.name  !== "Hindustan Times"
           );
+          
         setArticles(filteredArticles);
         setTotalResults(parsedData.totalResults)
         props.setProgress(100);
