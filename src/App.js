@@ -12,8 +12,8 @@ import {
 } from "react-router-dom";
 function App() {
 
-  const pageSize = 5;
-  const apiKey = "0ad5ea4acfb64db7819061aebc8c7195"
+  const pageSize = 12;
+  const apiKey = "865469551b124b0aba3512d45504c989"
   const [progress, setProgress] = useState(0)
   return (
     <div className="App">
